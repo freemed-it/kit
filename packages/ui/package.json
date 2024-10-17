@@ -18,10 +18,13 @@
   },
   "devDependencies": {
     "@freemed-kit/eslint-config": "workspace:*",
+    "@freemed-kit/typescript-config": "workspace:*",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
-    "@freemed-kit/typescript-config": "workspace:*",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },

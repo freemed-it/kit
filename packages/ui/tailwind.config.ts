@@ -3,8 +3,9 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
-  darkMode: ["class"],
-  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+  darkMode: ["selector"],
+  content: ["./components/**/*.{ts,tsx}"],
+  prefix: "tw-",
   theme: {
     container: {
       center: true,

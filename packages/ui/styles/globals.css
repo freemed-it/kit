@@ -72,10 +72,10 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply tw-border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply tw-bg-background tw-text-foreground;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;

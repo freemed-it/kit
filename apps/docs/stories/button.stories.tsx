@@ -1,46 +1,72 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@acme/ui/button";
+import { Button } from "@freemed-kit/ui";
 
+// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof Button> = {
+  title: "Example/Button",
   component: Button,
+  tags: ["autodocs"],
   argTypes: {
-    type: {
-      control: { type: "radio" },
-      options: ["button", "submit", "reset"],
+    children: { control: "text", defaultValue: "Button" },
+    variant: {
+      control: "select",
+      options: [
+        "primary",
+        "destructive",
+        "outline",
+        "secondary",
+        "ghost",
+        "link",
+      ],
     },
+    size: { control: "radio", options: ["sm", "md", "lg", "icon"] },
+    asChild: { control: "boolean" },
+    onClick: { action: "clicked", type: "function" },
   },
 };
 
 export default meta;
-
 type Story = StoryObj<typeof Button>;
 
-/*
- *👇 Render functions are a framework specific feature to allow you control on how the component renders.
- * See https://storybook.js.org/docs/react/api/csf
- * to learn how to use render functions.
- */
-export const Primary: Story = {
-  render: (props) => (
-    <Button
-      {...props}
-      onClick={(): void => {
-        // eslint-disable-next-line no-alert -- alert for demo
-        alert("Hello from Turborepo!");
-      }}
-    >
-      Hello
-    </Button>
-  ),
-  name: "Button",
+// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+export const Default: Story = {
   args: {
-    children: "Hello",
-    type: "button",
-    style: {
-      color: "blue",
-      border: "1px solid gray",
-      padding: 10,
-      borderRadius: 10,
-    },
+    variant: "default",
+    children: "Button",
+  },
+};
+
+export const Destructive: Story = {
+  args: {
+    variant: "destructive",
+    children: "Destructive Button",
+  },
+};
+
+export const Outline: Story = {
+  args: {
+    variant: "outline",
+    children: "Outline Button",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    children: "Secondary Button",
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: "ghost",
+    children: "Ghost Button",
+  },
+};
+
+export const Link: Story = {
+  args: {
+    variant: "link",
+    children: "Link Button",
   },
 };

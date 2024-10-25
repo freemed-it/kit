@@ -25,15 +25,5 @@
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix --max-warnings=0"
-    ]
   }
 }

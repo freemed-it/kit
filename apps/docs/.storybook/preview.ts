@@ -1,1 +1,1 @@
-import "@freemed-kit/ui/dist/index.css";
+import '@freemed-kit/ui/dist/index.css'

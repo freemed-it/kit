@@ -1,3 +1,3 @@
-import "./styles/globals.css";
+import './styles/globals.css'
 
-export { Button } from "./components/ui/button";
+export { Button } from './components/button'

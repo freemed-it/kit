@@ -2,6 +2,11 @@
   "name": "@freemed-kit/ui",
   "version": "0.0.0",
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freemed-it/kit.git",
+    "directory": "packages/ui"
+  },
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -46,5 +51,7 @@
       "prettier --write",
       "eslint --fix --max-warnings=0"
     ]
-  }
+  },
+  "homepage": "https://github.com/freemed-it/kit#readme",
+  "bugs": "https://github.com/freemed-it/kit/issues"
 }

@@ -9,7 +9,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish",
+    "release": "turbo run build --filter=@freemed-kit/docs^... && changeset publish",
     "ui:add": "pnpm --filter ui ui:add",
     "prepare": "husky",
     "lint-staged": "lint-staged"

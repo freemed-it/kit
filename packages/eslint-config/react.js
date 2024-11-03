@@ -12,17 +12,15 @@ const project = resolve(process.cwd(), 'tsconfig.json')
  */
 
 module.exports = {
-  extends: [
-    '@vercel/style-guide/eslint/browser',
-    '@vercel/style-guide/eslint/typescript',
-    '@vercel/style-guide/eslint/react',
-  ].map(require.resolve),
+  extends: ['plugin:tailwindcss/recommended', 'prettier'],
   parserOptions: {
     project,
   },
-  plugins: ['only-warn'],
-  globals: {
-    JSX: true,
+  plugins: ['only-warn', 'tailwindcss'],
+  ignorePatterns: ['node_modules/', 'dist/', '.eslintrc.js', '**/*.css'],
+  rules: {
+    'tailwindcss/no-custom-classname': 'off',
+    'tailwindcss/classnames-order': 'error',
   },
   settings: {
     'import/resolver': {
@@ -30,9 +28,15 @@ module.exports = {
         project,
       },
     },
+    tailwindcss: {
+      callees: ['cn', 'cva'],
+      config: 'tailwind.config.cjs',
+    },
   },
-  ignorePatterns: ['node_modules/', 'dist/', '.eslintrc.js', '**/*.css'],
-  rules: {
-    'import/no-default-export': 'off',
-  },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+    },
+  ],
 }

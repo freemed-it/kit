@@ -21,6 +21,7 @@ module.exports = {
       '@vercel/style-guide/eslint/browser',
       '@vercel/style-guide/eslint/react',
     ].map(require.resolve),
+    'prettier',
   ],
   parserOptions: {
     project,
@@ -40,5 +41,7 @@ module.exports = {
   ignorePatterns: ['node_modules/', 'dist/'],
   rules: {
     'import/no-default-export': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
 }

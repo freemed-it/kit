@@ -8,6 +8,7 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     children: { control: 'text', defaultValue: 'Badge' },
     variant: {
+      control: 'radio',
       options: ['default', 'secondary', 'destructive', 'outline'],
     },
   },

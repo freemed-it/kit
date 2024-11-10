@@ -35,7 +35,7 @@ export const WithContent: Story = {
 }
 
 export const WithLabel: Story = {
-  render: () => (
+  render: args => (
     <div className="tw-grid tw-w-full tw-gap-1.5">
       <Label htmlFor="message">Your message</Label>
       <Textarea id="message" placeholder="Type your message here." />
@@ -44,7 +44,7 @@ export const WithLabel: Story = {
 }
 
 export const WithText: Story = {
-  render: () => (
+  render: args => (
     <div className="tw-grid tw-w-full tw-gap-1.5">
       <Label htmlFor="message-2">Your Message</Label>
       <Textarea id="message-2" placeholder="Type your message here." />
@@ -54,7 +54,7 @@ export const WithText: Story = {
 }
 
 export const WithButton: Story = {
-  render: () => (
+  render: args => (
     <div className="tw-grid tw-w-full tw-gap-2">
       <Textarea placeholder="Type your message here." />
       <Button>Send message</Button>

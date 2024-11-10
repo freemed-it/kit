@@ -8,7 +8,6 @@ const meta: Meta<typeof Checkbox> = {
   argTypes: {
     checked: { control: 'boolean' },
     disabled: { control: 'boolean' },
-    onChange: { action: 'checkedChange' },
   },
 }
 
@@ -16,16 +15,6 @@ export default meta
 type Story = StoryObj<typeof Checkbox>
 
 export const Default: Story = {
-  args: {},
-}
-
-export const Disabled: Story = {
-  args: {
-    disabled: true,
-  },
-}
-
-export const WithText: Story = {
   render: args => (
     <div className="tw-items-top tw-flex tw-space-x-2">
       <Checkbox id="terms1" />
@@ -42,7 +31,7 @@ export const WithText: Story = {
   ),
 }
 
-export const WithTextDisabled: Story = {
+export const Disabled: Story = {
   render: args => (
     <div className="flex items-center space-x-2">
       <Checkbox disabled id="terms2" />

@@ -15,3 +15,4 @@ export {
 } from './components/table'
 export { Textarea } from './components/textarea'
 export { Label } from './components/label'
+export { Checkbox } from './components/checkbox'

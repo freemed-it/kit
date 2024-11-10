@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, Label, Textarea } from '@freemed-kit/ui'
 
-// TextareaWithButton 컴포넌트를 추가한 후, Storybook에 등록
 const meta: Meta<typeof Textarea> = {
   title: 'Components/Textarea',
   component: Textarea,

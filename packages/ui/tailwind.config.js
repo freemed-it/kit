@@ -1,8 +1,8 @@
-import type { Config } from 'tailwindcss'
 import { fontFamily } from 'tailwindcss/defaultTheme'
 import tailwindcssAnimate from 'tailwindcss-animate'
 
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: ['selector'],
   content: ['./components/**/*.{ts,tsx}'],
   prefix: 'tw-',
@@ -75,4 +75,4 @@ export default {
     },
   },
   plugins: [tailwindcssAnimate],
-} satisfies Config
+}

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useState } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Calendar } from '@freemed-kit/ui'
 
@@ -11,14 +11,9 @@ const meta: Meta<typeof Calendar> = {
 export default meta
 type Story = StoryObj<typeof Calendar>
 
-function CalendarDocs({ ...args }): JSX.Element {
-  const [date, setDate] = React.useState<Date | undefined>(new Date())
-
-  return (
-    <Calendar {...args} className="tw-rounded-md tw-border tw-w-fit" mode="single" onSelect={setDate} selected={date} />
-  )
-}
-
 export const Docs: Story = {
-  render: args => <CalendarDocs {...args} />,
+  render: function Render(args) {
+    const [date, setDate] = useState<Date | undefined>(new Date())
+    return <Calendar className="tw-rounded-md tw-border tw-w-fit" mode="single" onSelect={setDate} selected={date} />
+  },
 }

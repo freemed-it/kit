@@ -20,3 +20,12 @@ export { ScrollArea, ScrollBar } from './components/scroll-area'
 export { Calendar } from './components/calendar'
 export { Input } from './components/input'
 export { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './components/card'
+export {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from './components/pagination'

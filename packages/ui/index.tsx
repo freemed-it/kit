@@ -30,3 +30,4 @@ export {
   PaginationPrevious,
 } from './components/pagination'
 export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './components/accordion'
+export { Separator } from './components/separator'

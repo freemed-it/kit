@@ -31,3 +31,4 @@ export {
 } from './components/pagination'
 export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './components/accordion'
 export { Separator } from './components/separator'
+export { ResizablePanelGroup, ResizablePanel, ResizableHandle } from './components/resizable'

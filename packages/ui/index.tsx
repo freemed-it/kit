@@ -32,3 +32,15 @@ export {
 export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './components/accordion'
 export { Separator } from './components/separator'
 export { ResizablePanelGroup, ResizablePanel, ResizableHandle } from './components/resizable'
+export {
+  Select,
+  SelectGroup,
+  SelectValue,
+  SelectTrigger,
+  SelectContent,
+  SelectLabel,
+  SelectItem,
+  SelectSeparator,
+  SelectScrollUpButton,
+  SelectScrollDownButton,
+} from './components/select'

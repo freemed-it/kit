@@ -44,4 +44,5 @@ export {
   SelectScrollUpButton,
   SelectScrollDownButton,
 } from './components/select'
+export { Skeleton } from './components/skeleton'
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/tooltip'

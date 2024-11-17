@@ -44,3 +44,4 @@ export {
   SelectScrollUpButton,
   SelectScrollDownButton,
 } from './components/select'
+export { Skeleton } from './components/skeleton'

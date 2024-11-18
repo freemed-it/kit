@@ -86,3 +86,4 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuRadioGroup,
 } from './components/dropdown-menu'
+export { Tabs, TabsContent, TabsList, TabsTrigger } from './components/tabs'

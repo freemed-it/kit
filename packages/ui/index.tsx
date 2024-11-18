@@ -46,3 +46,4 @@ export {
 } from './components/select'
 export { Skeleton } from './components/skeleton'
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/tooltip'
+export { Popover, PopoverContent, PopoverTrigger } from './components/popover'

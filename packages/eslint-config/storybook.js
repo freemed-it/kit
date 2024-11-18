@@ -43,5 +43,6 @@ module.exports = {
     'import/no-default-export': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-shadow': 'off',
   },
 }

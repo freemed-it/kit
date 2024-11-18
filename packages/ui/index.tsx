@@ -59,3 +59,13 @@ export {
   SheetTitle,
   SheetDescription,
 } from './components/sheet'
+export {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+  DialogClose,
+} from './components/dialog'

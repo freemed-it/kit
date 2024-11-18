@@ -13,6 +13,7 @@
   "dependencies": {
     "@freemed-kit/ui": "workspace:*",
     "@storybook/preview-api": "^8.4.3",
+    "lucide-react": "^0.453.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

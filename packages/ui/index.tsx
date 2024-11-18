@@ -87,3 +87,14 @@ export {
   DropdownMenuRadioGroup,
 } from './components/dropdown-menu'
 export { Tabs, TabsContent, TabsList, TabsTrigger } from './components/tabs'
+export {
+  Command,
+  CommandDialog,
+  CommandInput,
+  CommandList,
+  CommandEmpty,
+  CommandGroup,
+  CommandItem,
+  CommandShortcut,
+  CommandSeparator,
+} from './components/command'

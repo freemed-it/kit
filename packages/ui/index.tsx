@@ -109,3 +109,4 @@ export {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from './components/alert-dialog'
+export { Alert, AlertTitle, AlertDescription } from './components/alert'

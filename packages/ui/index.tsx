@@ -98,3 +98,14 @@ export {
   CommandShortcut,
   CommandSeparator,
 } from './components/command'
+export {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from './components/alert-dialog'

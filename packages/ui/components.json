@@ -6,9 +6,9 @@
     "css": "styles/globals.css",
     "baseColor": "slate",
     "cssVariables": true,
-    "prefix": "tw-"
+    "prefix": ""
   },
-  "rsc": false,
+  "rsc": true,
   "tsx": true,
   "aliases": {
     "components": "@/components",

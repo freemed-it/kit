@@ -28,23 +28,23 @@ export const Default: Story = {
       <DialogTrigger asChild>
         <Button variant="outline">Edit Profile</Button>
       </DialogTrigger>
-      <DialogContent className="tw-sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>Make changes to your profile here. Click save when you&apos;re done.</DialogDescription>
         </DialogHeader>
-        <div className="tw-grid tw-gap-4 tw-py-4">
-          <div className="tw-grid tw-grid-cols-4 tw-items-center tw-gap-4">
-            <Label className="tw-text-right" htmlFor="name">
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label className="text-right" htmlFor="name">
               Name
             </Label>
-            <Input className="tw-col-span-3" defaultValue="Pedro Duarte" id="name" />
+            <Input className="col-span-3" defaultValue="Pedro Duarte" id="name" />
           </div>
-          <div className="tw-grid tw-grid-cols-4 tw-items-center tw-gap-4">
-            <Label className="tw-text-right" htmlFor="username">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label className="text-right" htmlFor="username">
               Username
             </Label>
-            <Input className="tw-col-span-3" defaultValue="@peduarte" id="username" />
+            <Input className="col-span-3" defaultValue="@peduarte" id="username" />
           </div>
         </div>
       </DialogContent>
@@ -58,23 +58,23 @@ export const DialogWithButton: Story = {
       <DialogTrigger asChild>
         <Button variant="outline">Edit Profile</Button>
       </DialogTrigger>
-      <DialogContent className="tw-sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>Make changes to your profile here. Click save when you&apos;re done.</DialogDescription>
         </DialogHeader>
-        <div className="tw-grid tw-gap-4 tw-py-4">
-          <div className="tw-grid tw-grid-cols-4 tw-items-center tw-gap-4">
-            <Label className="tw-text-right" htmlFor="name">
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label className="text-right" htmlFor="name">
               Name
             </Label>
-            <Input className="tw-col-span-3" defaultValue="Pedro Duarte" id="name" />
+            <Input className="col-span-3" defaultValue="Pedro Duarte" id="name" />
           </div>
-          <div className="tw-grid tw-grid-cols-4 tw-items-center tw-gap-4">
-            <Label className="tw-text-right" htmlFor="username">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label className="text-right" htmlFor="username">
               Username
             </Label>
-            <Input className="tw-col-span-3" defaultValue="@peduarte" id="username" />
+            <Input className="col-span-3" defaultValue="@peduarte" id="username" />
           </div>
         </div>
         <DialogFooter className="sm:justify-start">

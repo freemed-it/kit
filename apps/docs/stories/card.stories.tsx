@@ -22,22 +22,22 @@ type Story = StoryObj<typeof Card>
 
 export const Docs: Story = {
   render: args => (
-    <Card className="tw-w-[350px]">
+    <Card className="w-[350px]">
       <CardHeader>
         <CardTitle>Create project</CardTitle>
         <CardDescription>Deploy your new project in one-click.</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
-          <div className="tw-grid tw-w-full tw-items-center tw-gap-4">
-            <div className="tw-flex tw-flex-col tw-space-y-1.5">
+          <div className="grid w-full items-center gap-4">
+            <div className="flex flex-col space-y-1.5">
               <Label htmlFor="name">Name</Label>
               <Input id="name" placeholder="Name of your project" />
             </div>
           </div>
         </form>
       </CardContent>
-      <CardFooter className="tw-flex tw-justify-between">
+      <CardFooter className="flex justify-between">
         <Button variant="outline">Cancel</Button>
         <Button>Deploy</Button>
       </CardFooter>

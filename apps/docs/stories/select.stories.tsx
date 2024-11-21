@@ -21,7 +21,7 @@ type Story = StoryObj<typeof Select>
 export const Default: Story = {
   render: args => (
     <Select>
-      <SelectTrigger className="tw-w-[180px]">
+      <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="Select a fruit" />
       </SelectTrigger>
       <SelectContent>
@@ -41,7 +41,7 @@ export const Default: Story = {
 export const Scrollable: Story = {
   render: args => (
     <Select>
-      <SelectTrigger className="tw-w-[280px]">
+      <SelectTrigger className="w-[280px]">
         <SelectValue placeholder="Select a timezone" />
       </SelectTrigger>
       <SelectContent>

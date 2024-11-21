@@ -58,10 +58,10 @@ export const Default: Story = {
                 <DropdownMenuTrigger asChild>
                   <SidebarMenuButton>
                     <User2 /> Username
-                    <ChevronUp className="tw-ml-auto" />
+                    <ChevronUp className="ml-auto" />
                   </SidebarMenuButton>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="tw-w-[--radix-popper-anchor-width]" side="top">
+                <DropdownMenuContent className="w-[--radix-popper-anchor-width]" side="top">
                   <DropdownMenuItem>
                     <span>Account</span>
                   </DropdownMenuItem>

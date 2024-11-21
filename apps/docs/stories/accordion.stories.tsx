@@ -12,7 +12,7 @@ type Story = StoryObj<typeof Accordion>
 
 export const Docs: Story = {
   render: args => (
-    <Accordion className="tw-w-full" collapsible type="single">
+    <Accordion className="w-full" collapsible type="single">
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>

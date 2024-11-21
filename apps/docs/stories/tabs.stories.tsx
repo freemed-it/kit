@@ -26,8 +26,8 @@ type Story = StoryObj<typeof Tabs>
 
 export const Docs: Story = {
   render: args => (
-    <Tabs className="tw-w-[400px]" defaultValue="account">
-      <TabsList className="tw-grid tw-w-full tw-grid-cols-2">
+    <Tabs className="w-[400px]" defaultValue="account">
+      <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="account">Account</TabsTrigger>
         <TabsTrigger value="password">Password</TabsTrigger>
       </TabsList>
@@ -37,12 +37,12 @@ export const Docs: Story = {
             <CardTitle>Account</CardTitle>
             <CardDescription>Make changes to your account here. Click save when you&apos;re done.</CardDescription>
           </CardHeader>
-          <CardContent className="tw-space-y-2">
-            <div className="tw-space-y-1">
+          <CardContent className="space-y-2">
+            <div className="space-y-1">
               <Label htmlFor="name">Name</Label>
               <Input defaultValue="Pedro Duarte" id="name" />
             </div>
-            <div className="tw-space-y-1">
+            <div className="space-y-1">
               <Label htmlFor="username">Username</Label>
               <Input defaultValue="@peduarte" id="username" />
             </div>
@@ -58,12 +58,12 @@ export const Docs: Story = {
             <CardTitle>Password</CardTitle>
             <CardDescription>Change your password here. After saving, you&apos;ll be logged out.</CardDescription>
           </CardHeader>
-          <CardContent className="tw-space-y-2">
-            <div className="tw-space-y-1">
+          <CardContent className="space-y-2">
+            <div className="space-y-1">
               <Label htmlFor="current">Current password</Label>
               <Input id="current" type="password" />
             </div>
-            <div className="tw-space-y-1">
+            <div className="space-y-1">
               <Label htmlFor="new">New password</Label>
               <Input id="new" type="password" />
             </div>

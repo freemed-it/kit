@@ -14,6 +14,6 @@ type Story = StoryObj<typeof Calendar>
 export const Docs: Story = {
   render: function Render(args) {
     const [date, setDate] = useState<Date | undefined>(new Date())
-    return <Calendar className="tw-rounded-md tw-border tw-w-fit" mode="single" onSelect={setDate} selected={date} />
+    return <Calendar className="rounded-md border w-fit" mode="single" onSelect={setDate} selected={date} />
   },
 }

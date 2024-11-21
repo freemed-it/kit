@@ -50,7 +50,7 @@ export const InputPassword: Story = {
 
 export const InputFile: Story = {
   render: args => (
-    <div className="tw-grid tw-w-full tw-max-w-sm tw-items-center tw-gap-1.5">
+    <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor="picture">Picture</Label>
       <Input id="picture" type="file" />
     </div>
@@ -59,7 +59,7 @@ export const InputFile: Story = {
 
 export const InputWithLabel: Story = {
   render: args => (
-    <div className="tw-grid tw-w-full tw-max-w-sm tw-items-center tw-gap-1.5">
+    <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor="email">Email</Label>
       <Input id="email" placeholder="Email" type="email" />
     </div>
@@ -68,7 +68,7 @@ export const InputWithLabel: Story = {
 
 export const InputWithButton: Story = {
   render: args => (
-    <div className="tw-flex tw-w-full tw-max-w-sm tw-items-center tw-space-x-2">
+    <div className="flex w-full max-w-sm items-center space-x-2">
       <Input placeholder="Email" type="email" />
       <Button type="submit">Subscribe</Button>
     </div>

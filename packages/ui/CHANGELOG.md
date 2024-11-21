@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.0.0
+
+### Major Changes
+
+- e14531a: @freeemed-kit/ui 패키지 배포
+
 ## 0.1.1
 
 ### Patch Changes

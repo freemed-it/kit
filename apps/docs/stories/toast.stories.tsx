@@ -1,19 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Toast, ToastTitle, ToastDescription, ToastProvider, ToastViewport, Button } from '@freemed-kit/ui'
-import { useToast } from '@freemed-kit/ui/hooks/use-toast'
-import { Toaster } from '@freemed-kit/ui/components/toaster'
+import { Toaster, useToast, Button } from '@freemed-kit/ui'
 
 const meta: Meta = {
   title: 'Components/Toast',
-  component: Toast,
+  component: Toaster,
   tags: ['autodocs'],
   decorators: [
     Story => (
-      <ToastProvider>
+      <>
         {Story()}
         <Toaster />
-        <ToastViewport />
-      </ToastProvider>
+      </>
     ),
   ],
 }
@@ -40,7 +37,7 @@ export const Default: Story = {
   },
 }
 
-export const Destructivet: Story = {
+export const Destructive: Story = {
   render: function Render(args) {
     const { toast } = useToast()
     return (

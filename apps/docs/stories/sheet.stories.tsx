@@ -45,7 +45,7 @@ type SheetSide = (typeof SHEET_SIDES)[number]
 
 export const Side: Story = {
   render: args => (
-    <div className="tw-grid tw-grid-cols-2 tw-gap-2">
+    <div className="grid grid-cols-2 gap-2">
       {SHEET_SIDES.map(side => (
         <Sheet key={side}>
           <SheetTrigger asChild>
@@ -56,18 +56,18 @@ export const Side: Story = {
               <SheetTitle>Edit profile</SheetTitle>
               <SheetDescription>Make changes to your profile here. Click save when you&apos;re done.</SheetDescription>
             </SheetHeader>
-            <div className="tw-grid tw-gap-4 tw-py-4">
-              <div className="tw-grid tw-grid-cols-4 tw-items-center tw-gap-4">
-                <Label className="tw-text-right" htmlFor="name">
+            <div className="grid gap-4 py-4">
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label className="text-right" htmlFor="name">
                   Name
                 </Label>
-                <Input className="tw-col-span-3" id="name" value="Pedro Duarte" />
+                <Input className="col-span-3" id="name" value="Pedro Duarte" />
               </div>
-              <div className="tw-grid tw-grid-cols-4 tw-items-center tw-gap-4">
-                <Label className="tw-text-right" htmlFor="username">
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label className="text-right" htmlFor="username">
                   Username
                 </Label>
-                <Input className="tw-col-span-3" id="username" value="@peduarte" />
+                <Input className="col-span-3" id="username" value="@peduarte" />
               </div>
             </div>
             <SheetFooter>

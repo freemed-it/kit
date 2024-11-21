@@ -12,11 +12,11 @@ type Story = StoryObj<typeof Skeleton>
 
 export const Default: Story = {
   render: args => (
-    <div className="tw-flex tw-items-center tw-space-x-4">
-      <Skeleton className="tw-h-12 tw-w-12 tw-rounded-full" />
-      <div className="tw-space-y-2">
-        <Skeleton className="tw-h-4 tw-w-[250px]" />
-        <Skeleton className="tw-h-4 tw-w-[200px]" />
+    <div className="flex items-center space-x-4">
+      <Skeleton className="h-12 w-12 rounded-full" />
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-[250px]" />
+        <Skeleton className="h-4 w-[200px]" />
       </div>
     </div>
   ),
@@ -24,11 +24,11 @@ export const Default: Story = {
 
 export const Card: Story = {
   render: args => (
-    <div className="tw-flex tw-flex-col tw-space-y-3">
-      <Skeleton className="tw-h-[125px] tw-w-[250px] tw-rounded-xl" />
-      <div className="tw-space-y-2">
-        <Skeleton className="tw-h-4 tw-w-[250px]" />
-        <Skeleton className="tw-h-4 tw-w-[200px]" />
+    <div className="flex flex-col space-y-3">
+      <Skeleton className="h-[125px] w-[250px] rounded-xl" />
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-[250px]" />
+        <Skeleton className="h-4 w-[200px]" />
       </div>
     </div>
   ),

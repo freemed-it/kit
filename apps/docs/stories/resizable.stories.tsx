@@ -25,19 +25,16 @@ export const Horizontal: Story = {
     direction: 'horizontal',
   },
   render: ({ direction }) => (
-    <ResizablePanelGroup
-      className="tw-min-h-[200px] tw-max-w-md tw-rounded-lg tw-border tw-md:min-w-[450px]"
-      direction={direction}
-    >
+    <ResizablePanelGroup className="min-h-[200px] max-w-md rounded-lg border md:min-w-[450px]" direction={direction}>
       <ResizablePanel defaultSize={50}>
-        <div className="tw-flex tw-h-[200px] tw-items-center tw-justify-center tw-p-6">
-          <span className="tw-font-semibold">One</span>
+        <div className="flex h-[200px] items-center justify-center p-6">
+          <span className="font-semibold">One</span>
         </div>
       </ResizablePanel>
       <ResizableHandle />
       <ResizablePanel defaultSize={50}>
-        <div className="tw-flex tw-h-[200px] tw-items-center tw-justify-center tw-p-6">
-          <span className="tw-font-semibold">Two</span>
+        <div className="flex h-[200px] items-center justify-center p-6">
+          <span className="font-semibold">Two</span>
         </div>
       </ResizablePanel>
     </ResizablePanelGroup>
@@ -49,19 +46,16 @@ export const Vertical: Story = {
     direction: 'vertical',
   },
   render: ({ direction }) => (
-    <ResizablePanelGroup
-      className="tw-min-h-[200px] tw-max-w-md tw-rounded-lg tw-border tw-md:min-w-[450px]"
-      direction={direction}
-    >
+    <ResizablePanelGroup className="min-h-[200px] max-w-md rounded-lg border md:min-w-[450px]" direction={direction}>
       <ResizablePanel defaultSize={25}>
-        <div className="tw-flex tw-h-full tw-items-center tw-justify-center tw-p-6">
-          <span className="tw-font-semibold">Header</span>
+        <div className="flex h-full items-center justify-center p-6">
+          <span className="font-semibold">Header</span>
         </div>
       </ResizablePanel>
       <ResizableHandle />
       <ResizablePanel defaultSize={75}>
-        <div className="tw-flex tw-h-full tw-items-center tw-justify-center tw-p-6">
-          <span className="tw-font-semibold">Content</span>
+        <div className="flex h-full items-center justify-center p-6">
+          <span className="font-semibold">Content</span>
         </div>
       </ResizablePanel>
     </ResizablePanelGroup>
@@ -73,19 +67,16 @@ export const WithHandle: Story = {
     direction: 'horizontal',
   },
   render: ({ direction }) => (
-    <ResizablePanelGroup
-      className="tw-min-h-[200px] tw-max-w-md tw-rounded-lg tw-border tw-md:min-w-[450px]"
-      direction={direction}
-    >
+    <ResizablePanelGroup className="min-h-[200px] max-w-md rounded-lg border md:min-w-[450px]" direction={direction}>
       <ResizablePanel defaultSize={25}>
-        <div className="tw-flex tw-h-full tw-items-center tw-justify-center tw-p-6">
-          <span className="tw-font-semibold">Sidebar</span>
+        <div className="flex h-full items-center justify-center p-6">
+          <span className="font-semibold">Sidebar</span>
         </div>
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel defaultSize={75}>
-        <div className="tw-flex tw-h-full tw-items-center tw-justify-center tw-p-6">
-          <span className="tw-font-semibold">Content</span>
+        <div className="flex h-full items-center justify-center p-6">
+          <span className="font-semibold">Content</span>
         </div>
       </ResizablePanel>
     </ResizablePanelGroup>

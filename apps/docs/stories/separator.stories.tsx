@@ -20,12 +20,12 @@ type Story = StoryObj<typeof Separator>
 export const Docs: Story = {
   render: args => (
     <div>
-      <div className="tw-space-y-1">
-        <h4 className="tw-text-sm tw-font-medium tw-leading-none">Radix Primitives</h4>
-        <p className="tw-text-sm tw-text-muted-foreground">An open-source UI component library.</p>
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium leading-none">Radix Primitives</h4>
+        <p className="text-sm text-muted-foreground">An open-source UI component library.</p>
       </div>
-      <Separator className="tw-my-4" />
-      <div className="tw-flex tw-h-5 tw-items-center tw-space-x-4 tw-text-sm">
+      <Separator className="my-4" />
+      <div className="flex h-5 items-center space-x-4 text-sm">
         <div>Blog</div>
         <Separator orientation="vertical" />
         <div>Docs</div>

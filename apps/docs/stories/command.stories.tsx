@@ -24,7 +24,7 @@ type Story = StoryObj<typeof Command>
 
 export const Default: Story = {
   render: args => (
-    <Command className="tw-border tw-rounded-md">
+    <Command className="border rounded-md">
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
@@ -57,15 +57,17 @@ export const Dialog: Story = {
       }
 
       document.addEventListener('keydown', down)
-      return () => { document.removeEventListener('keydown', down); }
+      return () => {
+        document.removeEventListener('keydown', down)
+      }
     }, [])
 
     return (
       <>
-        <p className="tw-text-sm tw-text-muted-foreground">
+        <p className="text-sm text-muted-foreground">
           Press{' '}
-          <kbd className="tw-pointer-events-none tw-inline-flex tw-h-5 tw-select-none tw-items-center tw-gap-1 tw-rounded tw-border tw-bg-muted tw-px-1.5 tw-font-mono tw-text-[10px] tw-font-medium tw-text-muted-foreground tw-opacity-100">
-            <span className="tw-text-xs">⌘</span>J
+          <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+            <span className="text-xs">⌘</span>J
           </kbd>
         </p>
         <CommandDialog onOpenChange={setOpen} open={open}>

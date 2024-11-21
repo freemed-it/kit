@@ -110,3 +110,5 @@ export {
   AlertDialogTrigger,
 } from './components/alert-dialog'
 export { Alert, AlertTitle, AlertDescription } from './components/alert'
+export { Toast, ToastClose, ToastDescription, ToastProvider, ToastTitle, ToastViewport } from './components/toast'
+export { useToast } from './hooks/use-toast'

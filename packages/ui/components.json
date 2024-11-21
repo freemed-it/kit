@@ -8,7 +8,7 @@
     "cssVariables": true,
     "prefix": ""
   },
-  "rsc": false,
+  "rsc": true,
   "tsx": true,
   "aliases": {
     "components": "@/components",

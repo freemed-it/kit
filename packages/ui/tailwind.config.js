@@ -5,7 +5,6 @@ import tailwindcssAnimate from 'tailwindcss-animate'
 module.exports = {
   darkMode: ['selector'],
   content: ['./components/**/*.{ts,tsx}'],
-  prefix: 'tw-',
   theme: {
     container: {
       center: 'true',

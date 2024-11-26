@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('button'),
+      },
+    },
+  },
   tags: ['autodocs'],
   argTypes: {
     children: { control: 'text', defaultValue: 'Button' },

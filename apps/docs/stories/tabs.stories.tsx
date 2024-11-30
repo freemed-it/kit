@@ -14,10 +14,18 @@ import {
   Label,
   Button,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Tabs> = {
   title: 'Components/Tabs',
   component: Tabs,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('tabs'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

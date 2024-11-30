@@ -11,10 +11,18 @@ import {
   AlertDialogTrigger,
   Button,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof AlertDialog> = {
   title: 'Components/AlertDialog',
   component: AlertDialog,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('alert-dialog'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

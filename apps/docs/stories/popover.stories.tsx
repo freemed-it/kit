@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, Input, Label, Popover, PopoverContent, PopoverTrigger } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Popover> = {
   title: 'Components/Popover',
   component: Popover,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('popover'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

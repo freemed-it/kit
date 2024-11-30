@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Toaster, useToast, Button } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta = {
   title: 'Components/Toast',
   component: Toaster,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('toast'),
+      },
+    },
+  },
   tags: ['autodocs'],
   decorators: [
     Story => (

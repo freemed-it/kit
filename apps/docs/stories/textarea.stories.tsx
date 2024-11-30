@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, Label, Textarea } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Textarea> = {
   title: 'Components/Textarea',
   component: Textarea,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('textarea'),
+      },
+    },
+  },
   tags: ['autodocs'],
   argTypes: {
     placeholder: { control: 'text', defaultValue: 'Enter your text here...' },

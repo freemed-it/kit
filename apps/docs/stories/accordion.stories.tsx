@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Accordion> = {
   title: 'Components/Accordion',
   component: Accordion,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('accordion'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

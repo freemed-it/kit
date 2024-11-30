@@ -1,10 +1,18 @@
 import { useState } from '@storybook/preview-api'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Calendar } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Calendar> = {
   title: 'Components/Calendar',
   component: Calendar,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('calendar'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

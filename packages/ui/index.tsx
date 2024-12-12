@@ -138,3 +138,4 @@ export {
   SidebarTrigger,
   useSidebar,
 } from './components/sidebar'
+export { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from './components/form'

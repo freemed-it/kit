@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.1.0
+
+### Minor Changes
+
+- 73e32d8: Form 컴포넌트 구현
+
 ## 1.0.0
 
 ### Major Changes

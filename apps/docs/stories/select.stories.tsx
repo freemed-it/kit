@@ -8,10 +8,18 @@ import {
   SelectLabel,
   SelectItem,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Select> = {
   title: 'Components/Select',
   component: Select,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('select'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

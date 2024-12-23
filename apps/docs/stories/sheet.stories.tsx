@@ -12,10 +12,18 @@ import {
   Input,
   Label,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Sheet> = {
   title: 'Components/Sheet',
   component: Sheet,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('sheet'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 
@@ -25,7 +33,9 @@ type Story = StoryObj<typeof Sheet>
 export const Default: Story = {
   render: args => (
     <Sheet>
-      <SheetTrigger>Open</SheetTrigger>
+      <SheetTrigger>
+        <Button variant="outline">Open</Button>
+      </SheetTrigger>
       <SheetContent>
         <SheetHeader>
           <SheetTitle>Are you absolutely sure?</SheetTitle>

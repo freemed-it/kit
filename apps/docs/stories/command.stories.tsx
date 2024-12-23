@@ -12,10 +12,18 @@ import {
   CommandSeparator,
 } from '@freemed-kit/ui'
 import { Calculator, Calendar, CreditCard, Settings, Smile, User } from 'lucide-react'
+import docs from '../docs'
 
 const meta: Meta<typeof Command> = {
   title: 'Components/Command',
   component: Command,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('command'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

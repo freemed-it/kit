@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { ScrollArea } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof ScrollArea> = {
   title: 'Components/ScrollArea',
   component: ScrollArea,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('scroll-area'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

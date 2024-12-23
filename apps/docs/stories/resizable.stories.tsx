@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { ResizablePanelGroup, ResizablePanel, ResizableHandle } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof ResizablePanelGroup> = {
   title: 'Components/Resizable',
   component: ResizablePanelGroup,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('resizable'),
+      },
+    },
+  },
   tags: ['autodocs'],
   argTypes: {
     direction: {

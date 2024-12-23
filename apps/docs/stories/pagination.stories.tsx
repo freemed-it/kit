@@ -8,10 +8,18 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Pagination> = {
   title: 'Components/Pagination',
   component: Pagination,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('pagination'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

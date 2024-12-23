@@ -12,10 +12,18 @@ import {
   DropdownMenuRadioGroup,
   Button,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof DropdownMenu> = {
   title: 'Components/DropdownMenu',
   component: DropdownMenu,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('dropdown-menu'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 
@@ -25,7 +33,9 @@ type Story = StoryObj<typeof DropdownMenu>
 export const Default: Story = {
   render: args => (
     <DropdownMenu>
-      <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+      <DropdownMenuTrigger>
+        <Button variant="outline">Open</Button>
+      </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />

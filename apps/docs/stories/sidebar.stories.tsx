@@ -18,10 +18,18 @@ import {
   DropdownMenuItem,
 } from '@freemed-kit/ui'
 import { Calendar, Home, Inbox, Search, Settings, User2, ChevronUp } from 'lucide-react'
+import docs from '../docs'
 
 const meta: Meta<typeof Sidebar> = {
   title: 'Components/Sidebar',
   component: Sidebar,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('sidebar'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

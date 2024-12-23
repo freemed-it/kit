@@ -12,10 +12,18 @@ import {
   Input,
   Button,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Dialog> = {
   title: 'Components/Dialog',
   component: Dialog,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('dialog'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 
@@ -52,7 +60,7 @@ export const Default: Story = {
   ),
 }
 
-export const DialogWithButton: Story = {
+export const WithButton: Story = {
   render: args => (
     <Dialog>
       <DialogTrigger asChild>

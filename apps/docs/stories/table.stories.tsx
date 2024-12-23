@@ -9,10 +9,18 @@ import {
   TableCell,
   TableCaption,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Table> = {
   title: 'Components/Table',
   component: Table,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('table'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

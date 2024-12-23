@@ -10,10 +10,18 @@ import {
   Label,
   Input,
 } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Card> = {
   title: 'Components/Card',
   component: Card,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('card'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

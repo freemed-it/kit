@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, Input, Label } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Input> = {
   title: 'Components/Input',
   component: Input,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('input'),
+      },
+    },
+  },
   tags: ['autodocs'],
   argTypes: {
     placeholder: { control: 'text', defaultValue: 'Enter text...' },
@@ -34,21 +42,21 @@ export const Disabled: Story = {
   },
 }
 
-export const InputEmail: Story = {
+export const Email: Story = {
   args: {
     placeholder: 'Email',
     type: 'email',
   },
 }
 
-export const InputPassword: Story = {
+export const Password: Story = {
   args: {
     placeholder: 'Password',
     type: 'password',
   },
 }
 
-export const InputFile: Story = {
+export const File: Story = {
   render: args => (
     <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor="picture">Picture</Label>
@@ -57,7 +65,7 @@ export const InputFile: Story = {
   ),
 }
 
-export const InputWithLabel: Story = {
+export const WithLabel: Story = {
   render: args => (
     <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor="email">Email</Label>
@@ -66,7 +74,7 @@ export const InputWithLabel: Story = {
   ),
 }
 
-export const InputWithButton: Story = {
+export const WithButton: Story = {
   render: args => (
     <div className="flex w-full max-w-sm items-center space-x-2">
       <Input placeholder="Email" type="email" />

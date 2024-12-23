@@ -1,10 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Alert, AlertTitle, AlertDescription } from '@freemed-kit/ui'
 import { Terminal, AlertCircle } from 'lucide-react'
+import docs from '../docs'
 
 const meta: Meta<typeof Alert> = {
   title: 'Components/Alert',
   component: Alert,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('alert'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Separator } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Separator> = {
   title: 'Components/Separator',
   component: Separator,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('separator'),
+      },
+    },
+  },
   tags: ['autodocs'],
   argTypes: {
     orientation: {

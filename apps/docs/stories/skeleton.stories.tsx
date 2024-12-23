@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Skeleton } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Skeleton> = {
   title: 'Components/Skeleton',
   component: Skeleton,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('skeleton'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 

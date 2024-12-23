@@ -1,9 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Checkbox, Label } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Checkbox> = {
   title: 'Components/Checkbox',
   component: Checkbox,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('checkbox'),
+      },
+    },
+  },
   tags: ['autodocs'],
   argTypes: {
     checked: { control: 'boolean' },

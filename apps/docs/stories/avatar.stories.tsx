@@ -1,16 +1,24 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Avatar, AvatarImage, AvatarFallback } from '@freemed-kit/ui'
+import docs from '../docs'
 
 const meta: Meta<typeof Avatar> = {
   title: 'Components/Avatar',
   component: Avatar,
+  parameters: {
+    docs: {
+      description: {
+        component: docs('avatar'),
+      },
+    },
+  },
   tags: ['autodocs'],
 }
 
 export default meta
 type Story = StoryObj<typeof Avatar>
 
-export const AvatarWithImage: Story = {
+export const WithImage: Story = {
   render: args => (
     <Avatar>
       <AvatarImage alt="@freemed-it-admin" src="https://github.com/freemed-it-admin.png" />
@@ -19,7 +27,7 @@ export const AvatarWithImage: Story = {
   ),
 }
 
-export const AvatarWithFallback: Story = {
+export const WithFallback: Story = {
   render: args => (
     <Avatar>
       <AvatarImage alt="@freemed-it-admin" src="" />

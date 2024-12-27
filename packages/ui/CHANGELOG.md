@@ -1,5 +1,16 @@
 # @freemed-kit/ui
 
+## 1.2.0
+
+### Minor Changes
+
+- 70cc334: InputOTP 컴포넌트 구현
+
+### Patch Changes
+
+- bbc5db0: - color 변수 수정
+  - package.json files 필드에 tailwind.config.js 추가
+
 ## 1.1.0
 
 ### Minor Changes

@@ -65,7 +65,7 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        sans: ['"Pretendard"', ...fontFamily.sans],
+        sans: ['Pretendard', 'sans-serif', ...fontFamily.sans],
       },
       keyframes: {
         'accordion-down': {

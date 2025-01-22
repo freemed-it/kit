@@ -138,5 +138,14 @@ export {
   SidebarTrigger,
   useSidebar,
 } from './components/sidebar'
-export { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from './components/form'
+export {
+  useFormField,
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from './components/form'
 export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator } from './components/input-otp'

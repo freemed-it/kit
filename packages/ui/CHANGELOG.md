@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.2.1
+
+### Patch Changes
+
+- 7c07373: useFormField export 추가
+
 ## 1.2.0
 
 ### Minor Changes

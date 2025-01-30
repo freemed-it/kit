@@ -149,3 +149,4 @@ export {
   FormMessage,
 } from './components/form'
 export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator } from './components/input-otp'
+export { HoverCard, HoverCardTrigger, HoverCardContent } from './components/hover-card'

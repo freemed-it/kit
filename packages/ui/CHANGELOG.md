@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.3.0
+
+### Minor Changes
+
+- 19eff52: HoverCard 컴포넌트 구현
+
 ## 1.2.1
 
 ### Patch Changes

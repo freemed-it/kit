@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.3.1
+
+### Patch Changes
+
+- b686be2: Toast 컴포넌트 및 toast 함수 export 추가
+
 ## 1.3.0
 
 ### Minor Changes

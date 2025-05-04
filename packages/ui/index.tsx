@@ -111,7 +111,16 @@ export {
 } from './components/alert-dialog'
 export { Alert, AlertTitle, AlertDescription } from './components/alert'
 export { Toaster } from './components/toaster'
-export { useToast } from './hooks/use-toast'
+export { useToast, toast } from './hooks/use-toast'
+export {
+  ToastProvider,
+  ToastViewport,
+  Toast,
+  ToastTitle,
+  ToastDescription,
+  ToastClose,
+  ToastAction,
+} from './components/toast'
 export {
   Sidebar,
   SidebarContent,

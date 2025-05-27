@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.3.2
+
+### Patch Changes
+
+- a360642: Table 컴포넌트 overflow-auto div 제거
+
 ## 1.3.1
 
 ### Patch Changes

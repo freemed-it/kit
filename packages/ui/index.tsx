@@ -110,17 +110,6 @@ export {
   AlertDialogTrigger,
 } from './components/alert-dialog'
 export { Alert, AlertTitle, AlertDescription } from './components/alert'
-export { Toaster } from './components/toaster'
-export { useToast, toast } from './hooks/use-toast'
-export {
-  ToastProvider,
-  ToastViewport,
-  Toast,
-  ToastTitle,
-  ToastDescription,
-  ToastClose,
-  ToastAction,
-} from './components/toast'
 export {
   Sidebar,
   SidebarContent,
@@ -159,3 +148,4 @@ export {
 } from './components/form'
 export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator } from './components/input-otp'
 export { HoverCard, HoverCardTrigger, HoverCardContent } from './components/hover-card'
+export { Toaster } from './components/sonner'

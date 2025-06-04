@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.3.3
+
+### Patch Changes
+
+- bf605a8: Sonner 컴포넌트 구현 및 Toast 컴포넌트 제거
+
 ## 1.3.2
 
 ### Patch Changes

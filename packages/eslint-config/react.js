@@ -12,25 +12,18 @@ const project = resolve(process.cwd(), 'tsconfig.json')
  */
 
 module.exports = {
-  extends: ['plugin:tailwindcss/recommended', 'prettier'],
+  extends: ['prettier'],
   parserOptions: {
     project,
   },
-  plugins: ['only-warn', 'tailwindcss'],
+  plugins: ['only-warn'],
   ignorePatterns: ['node_modules/', 'dist/', '.eslintrc.js', '**/*.css'],
-  rules: {
-    'tailwindcss/no-custom-classname': 'off',
-    'tailwindcss/classnames-order': 'error',
-  },
+  rules: {},
   settings: {
     'import/resolver': {
       typescript: {
         project,
       },
-    },
-    tailwindcss: {
-      callees: ['cn', 'cva'],
-      config: 'tailwind.config.cjs',
     },
   },
   overrides: [

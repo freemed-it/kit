@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.4.0
+
+### Minor Changes
+
+- 71699c4: tailwind v4 마이그레이션 및 기본 스타일 변경
+
 ## 1.3.3
 
 ### Patch Changes

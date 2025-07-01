@@ -1,5 +1,11 @@
 # @freemed-kit/ui
 
+## 1.4.1
+
+### Patch Changes
+
+- e18b6a0: Sidebar 컴포넌트에 breakpoint prop 추가
+
 ## 1.4.0
 
 ### Minor Changes
